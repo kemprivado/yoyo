@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Page Title</title>
+
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(50,50),
+    zoom:100,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+
+<h1>my casa donde esta?</h1>
+<p>where is my house?.</p>
+<ul class="table-view">
+  <li class="table-view-cell">
+    <a class="navigate-right">
+     <button type="button">my house!</button>
+    </a>
+  </li>
+  <li class="table-view-cell">
+    <a class="navigate-right">
+      <button type="button">usc!</button>
+    </a>
+  </li>
+  <li class="table-view-cell">
+    <a class="navigate-right">
+      <button type="button"><a href="yo.html">random</a></button>
+    </a>
+  </li>
+</ul>
+<body>
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</body>
+</html>
